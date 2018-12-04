@@ -7,45 +7,68 @@
     <title>William McAdams Portfolio Website</title>
   </head>
   <body>
-    <div id="background"></div>
+    <div class="wrapper">
+      <div id="header" class="panel">
+        <img id="headshot" src="./assets/images/3.jpg" alt="Headshot">
+        <header>
+          <h1>William McAdams</h1>
+          <h3>Software Engineer</h3>
+          <p>I am an entry-level software engineer based out of New York City with
+            experience in React/Redux and Ruby on Rails</p>
+        </header>
+      </div>
 
-    <div id="header-panel" class="panel">
-      <img id="headshot" src="./assets/images/3.jpg" alt="Headshot">
-      <header>
-        <h1>William McAdams</h1>
-        <h3>Software Engineer</h3>
-        <p>I am an entry-level software engineer based out of New York City with
-          experience in React/Redux and Ruby on Rails</p>
-      </header>
-      <span id="links">
-        <a href="https://github.com/musicpulpite">
-          Github
-        </a>
-        <a href="https://www.linkedin.com/in/musicpulpite/">
-          LinkedIn
-        </a>
-        <a href="#">
-          AngelList
-        </a>
-      </span>
+      <div class="section parallax"></div>
+
+      <div id="projects" class="panel">
+        <div id="feedlet">
+          <img src="./assets/images/screenshot_real.png" alt="FeedletScreen">
+          <p>
+            Feedlet
+          </br>
+            News aggregator website powered by NewsAPI.
+          </p>
+        </div>
+        <div id="tron-light-cycles">
+          <img src="./assets/images/tron_game_screenshot.png" alt="TronScreen">
+          <p>
+            Tron Light Cycles
+          </br>
+            A browser game recreating the classic arena battle from the movie Tron.
+          </p>
+        </div>
+        <div id="virtual-dom">
+          <img src="./assets/images/screenshot_real.png" alt="VirtualDOM">
+          <p>
+            VirtualDOM Diffing
+          </br>
+            A lightweight recreation of ReactJS' core innovation - the VirtualDOM
+            and VirtualDOM diffing algorithm.
+          </p>
+        </div>
+      </div>
+
+      <div class="section parallax"></div>
+
+      <div id="links" class="panel">
+        <header>
+          <h1>Links</h1>
+        </header>
+        <div id="logos">
+          <a href="https://github.com/musicpulpite">
+            <img src="./assets/images/github_logo.png" alt="github">
+          </a>
+          <a href="https://www.linkedin.com/in/musicpulpite/">
+            <img src="./assets/images/linkedin_logo.png" alt="linkedin">
+          </a>
+          <a href="#">
+            <img src="./assets/images/angellist_logo.png" alt="angellist">
+          </a>
+        </div>
+      </div>
+
+      <div class="section parallax"></div>
     </div>
 
-    <div id="projects-panel" class="panel">
-      <div id="feedlet">
-        <img src="./assets/images/screenshot_official.png" alt="FeedletScreen">
-
-      </div>
-      <div id="tron-light-cycles">
-        <img src="./assets/images/tron_game_screenshot.png" alt="TronScreen">
-
-      </div>
-      <div id="virtual-dom">
-        <img src="./assets/images/screenshot_official.png" alt="FeedletScreen">
-
-      </div>
-    </div>
-
-    <div id="misc-panel" class="panel">
-    </div>
   </body>
 </html>

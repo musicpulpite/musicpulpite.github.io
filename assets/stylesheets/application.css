@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+#background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  width: auto;
+  height: 100%;
+}
+
+body > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  width: 100%;
+  height: 400px;
+
+  margin-bottom: 200px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  background: white;
+
+  box-shadow: 0px 0px 15px;
+}
+
+#header-panel {
+}
+
+#projects-panel {
+  display: flex;
+  flex-direction: row;
+}
+
+#projects-panel > div {
+  height: 400px;
+  width: 33.3%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#projects-panel > div img {
+  width: 70%;
+  height: auto;
+
+  border: 1px solid black;
+}
+
+#projects-panel > div img:hover {
+  width: 80%;
+  transition: width 0.5s linear;
+
+  cursor: pointer;
+}
+
+#mis-panel {
+
+}

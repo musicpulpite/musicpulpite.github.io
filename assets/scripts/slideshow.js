@@ -16,7 +16,10 @@ const slideLeft = () => {
 };
 
 window.addEventListener('DOMContentLoaded', () => {
-  window.$projects = Array.from(document.getElementById('projects').children);
+  window.$projects =
+  Array.from(
+    document.getElementById('projects').children
+  ).slice(2);
   const leftButton = document.getElementById('left');
   const rightButton = document.getElementById('right');
 

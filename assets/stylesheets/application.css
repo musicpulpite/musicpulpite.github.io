@@ -71,6 +71,21 @@ body {
 
 /* projects */
 
+#left, #right {
+  position: absolute;
+  top: 50%;
+
+  z-index: 2;
+}
+
+#left {
+  left: 10%;
+}
+
+#right {
+  right: 10%;
+}
+
 #projects {
   overflow: hidden;
 }

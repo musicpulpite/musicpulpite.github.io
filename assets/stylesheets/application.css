@@ -72,33 +72,68 @@ body {
 /* projects */
 
 #projects {
-  display: flex;
-  flex-direction: row;
+  overflow: hidden;
 }
 
 #projects > div {
-  position: relative;
   height: 400px;
-  width: 33.3%;
+  width: 33.3vw;
 
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  transition: left 1s ease;
+}
+
+.zeroth {
+  position: absolute;
+  top: 0;
+  left: -33.3vw;
+}
+
+.first {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.second {
+  position: absolute;
+  top: 0;
+  left: 33.3vw;
+}
+
+.third {
+  position: absolute;
+  top: 0;
+  left: 66.6vw;
+}
+
+.fourth {
+  position: absolute;
+  top: 0;
+  left: 100vw;
+}
+
+.hidden {
+  visibility: hidden;
 }
 
 #projects > div img {
   position: absolute;
   top: 40px;
 
-  width: 70%;
-  height: auto;
+  width: auto;
+  height: 60%;
 
   border: 1px solid black;
+  opacity: 1;
 }
 
 #projects > div img:hover {
-  width: 80%;
-  transition: width 0.5s linear;
+  height: 80%;
+  transition: height 0.5s linear;
 
   cursor: pointer;
 }

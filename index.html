@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css"
       href="assets/stylesheets/application.css">
+    <script type="text/javascript" src="assets/scripts/slideshow.js"></script>
     <title>William McAdams Portfolio Website</title>
   </head>
   <body>
@@ -21,7 +22,17 @@
       <div class="section parallax"></div>
 
       <div id="projects" class="panel">
-        <div id="feedlet">
+        <button type="button" id="left">Left</button>
+        <button type="button" id="right">Right</button>
+        <div id="placeholder" class="zeroth hidden">
+          <img src="./assets/images/cool_goose.png" alt="Placeholder">
+          <p>
+            Lorem
+          </br>
+            ipsum
+          </p>
+        </div>
+        <div id="feedlet" class="first">
           <img src="./assets/images/screenshot_real.png" alt="FeedletScreen">
           <p>
             Feedlet
@@ -29,7 +40,7 @@
             News aggregator website powered by NewsAPI.
           </p>
         </div>
-        <div id="tron-light-cycles">
+        <div id="tron-light-cycles" class="second">
           <img src="./assets/images/tron_game_screenshot.png" alt="TronScreen">
           <p>
             Tron Light Cycles
@@ -37,7 +48,7 @@
             A browser game recreating the classic arena battle from the movie Tron.
           </p>
         </div>
-        <div id="virtual-dom">
+        <div id="virtual-dom" class="third">
           <img src="./assets/images/screenshot_real.png" alt="VirtualDOM">
           <p>
             VirtualDOM Diffing
@@ -46,6 +57,16 @@
             and VirtualDOM diffing algorithm.
           </p>
         </div>
+        <div id="kaggle" class="fourth hidden">
+          <img src="./assets/images/screenshot_real.png" alt="VirtualDOM">
+          <p>
+            Google Cloud & NCAA® ML Competition 2018-Men's
+          </br>
+            An introductory atttempt at neural network predictions on the NCAA
+            Men's Basketball Tournament.
+          </p>
+        </div>
+
       </div>
 
       <div class="section parallax"></div>

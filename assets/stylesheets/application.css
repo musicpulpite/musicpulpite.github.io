@@ -4,6 +4,7 @@ body {
 
   width: 100vw;
   height: auto;
+  overflow: hidden;
 
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
@@ -69,22 +70,50 @@ body {
   box-shadow: 0px 0px 15px;
 }
 
-/* projects */
+/* project buttons */
 
 #left, #right {
   position: absolute;
-  top: 50%;
+  top: 0;
 
   z-index: 2;
+
+  width: 5vw;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: none;
+  border: none;
+
+  transition: width 1s linear;
+}
+
+#left img:hover, #right img:hover {
+  filter: brightness(65%);
+  width: 100%;
+}
+
+#left:focus, #right:focus {
+  outline: none;
+}
+
+#left img, #right img {
+  width: 80%;
+  height: auto
 }
 
 #left {
-  left: 10%;
+  left: 0;
 }
 
 #right {
-  right: 10%;
+  right: 0;
 }
+
+/* project panels */
 
 #projects {
   overflow: hidden;
@@ -92,7 +121,7 @@ body {
 
 #projects > div {
   height: 400px;
-  width: 33.3vw;
+  width: 30vw;
 
   display: flex;
   flex-direction: column;
@@ -104,25 +133,25 @@ body {
 .zeroth {
   position: absolute;
   top: 0;
-  left: -33.3vw;
+  left: -30vw;
 }
 
 .first {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 5vw;
 }
 
 .second {
   position: absolute;
   top: 0;
-  left: 33.3vw;
+  left: 35vw;
 }
 
 .third {
   position: absolute;
   top: 0;
-  left: 66.6vw;
+  left: 65vw;
 }
 
 .fourth {
@@ -135,22 +164,26 @@ body {
   visibility: hidden;
 }
 
-#projects > div img {
+#projects > div > a {
   position: absolute;
   top: 40px;
 
   width: auto;
-  height: 60%;
-
-  border: 1px solid black;
-  opacity: 1;
+  height: 50%;
 }
 
-#projects > div img:hover {
-  height: 80%;
+#projects > div > a:hover {
+  height: 70%;
   transition: height 0.5s linear;
 
   cursor: pointer;
+}
+
+#projects > div img {
+  height: 100%;
+
+  border: 1px solid black;
+  opacity: 1;
 }
 
 #projects > div p {
@@ -176,7 +209,7 @@ body {
   position: absolute;
   top: 200px;
 
-  width: 100%;
+  width: 80%;
 
   display: flex;
   flex-direction: row;

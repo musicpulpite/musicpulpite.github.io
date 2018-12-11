@@ -19,25 +19,24 @@ body {
 .section {
   position: relative;
   height: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 48px;
-  color: white;
 }
 
 .parallax::after {
   content: " ";
   position: absolute;
-  top: -150px;
+  top: -140px;
   right: 0;
-  bottom: -150px;
+  bottom: -140px;
   left: 0;
   transform: translateZ(-1px) scale(2);
   background-size: 100%;
   z-index: -1;
   background-image: url('../images/background.png');
   background-repeat: repeat;
+}
+
+.parallax:last-child {
+  overflow: hidden;
 }
 
 .panel {
@@ -68,6 +67,20 @@ body {
   height: auto;
 
   box-shadow: 0px 0px 15px;
+}
+
+#header a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+
+  transition: color 0.2s linear;
+}
+
+#header a:hover {
+  color: red;
+  
+  transition: color 0.2s linear;
 }
 
 /* project buttons */
@@ -217,8 +230,8 @@ body {
 }
 
 #links #logos img {
-  width: 40px;
-  height: auto;
+  width: auto;
+  height: 40px;
 }
 
 #links #logos a:hover {

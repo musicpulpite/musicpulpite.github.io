@@ -73,14 +73,10 @@ body {
   text-decoration: none;
   color: black;
   font-weight: 600;
-
-  transition: color 0.2s linear;
 }
 
 #header a:hover {
-  color: red;
-  
-  transition: color 0.2s linear;
+  text-decoration: underline;
 }
 
 /* project buttons */
@@ -186,7 +182,7 @@ body {
 }
 
 #projects > div > a:hover {
-  height: 70%;
+  height: 60%;
   transition: height 0.5s linear;
 
   cursor: pointer;

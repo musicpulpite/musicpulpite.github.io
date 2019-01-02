@@ -1,4 +1,4 @@
-let orderArr = ['zeroth hidden', 'first', 'second', 'third', 'fourth hidden'];
+let orderArr = ['zeroth hidden', 'first', 'second', 'third', 'fourth hidden', 'fifth hidden'];
 
 const slideRight = () => {
   window.$projects.forEach((project) => {

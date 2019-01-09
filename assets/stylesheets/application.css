@@ -122,6 +122,14 @@ body {
   right: 0;
 }
 
+#left:hover {
+  cursor: pointer;
+}
+
+#right:hover {
+  cursor: pointer;
+}
+
 /* project panels */
 
 #projects {

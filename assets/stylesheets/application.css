@@ -7,6 +7,11 @@ body {
   overflow: hidden;
 
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+
+/*  */
+  background-image: url('../images/background.png');
+  background-repeat: repeat;
+  background-size: 80%;
 }
 
 .wrapper {
@@ -21,7 +26,7 @@ body {
   height: 400px;
 }
 
-.parallax::after {
+/* .parallax::after {
   content: " ";
   position: absolute;
   top: -140px;
@@ -37,7 +42,7 @@ body {
 
 .parallax:last-child {
   overflow: hidden;
-}
+} */
 
 .panel {
   position: relative;
@@ -133,12 +138,22 @@ body {
 /* project panels */
 
 #projects {
+  position: relative;
   overflow: hidden;
+  height: 500px;
+}
+
+#projects > header {
+  position: absolute;
+  top: 10px;
+  left: calc(50% - 57px);
 }
 
 #projects > div {
   height: 400px;
   width: 30vw;
+
+  padding-top: 100px;
 
   display: flex;
   flex-direction: column;
@@ -189,15 +204,15 @@ body {
 
 #projects > div > a {
   position: absolute;
-  top: 40px;
+  top: 110px;
 
   width: auto;
-  height: 50%;
+  height: 40%;
 }
 
 #projects > div > a:hover {
-  height: 60%;
-  transition: height 0.5s linear;
+  height: 45%;
+  transition: height 0.25s linear;
 
   cursor: pointer;
 }

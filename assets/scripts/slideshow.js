@@ -19,7 +19,7 @@ window.addEventListener('DOMContentLoaded', () => {
   window.$projects =
   Array.from(
     document.getElementById('projects').children
-  ).slice(2);
+  ).slice(3);
   const leftButton = document.getElementById('left');
   const rightButton = document.getElementById('right');
 

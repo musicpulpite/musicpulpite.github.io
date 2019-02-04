@@ -20,6 +20,7 @@ window.addEventListener('DOMContentLoaded', () => {
   Array.from(
     document.getElementById('project-slideshow').children
   );
+
   const leftButton = document.getElementById('left');
   const rightButton = document.getElementById('right');
 

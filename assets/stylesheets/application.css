@@ -4,13 +4,10 @@ body {
 
   width: 100vw;
   height: auto;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
 
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-
-  background-image: url('../images/background.png');
-  background-repeat: repeat;
-  background-size: 80%;
+  font-family: 'Source Serif Pro', serif;
 }
 
 #intro {
@@ -27,6 +24,18 @@ body {
 
   font-size: 40px;
   color: white;
+
+  background-image: url('../images/background.png');
+  background-repeat: repeat;
+  background-size: 80%;
+  filter: blur(0px);
+}
+
+#intro header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #intro header * {
@@ -38,9 +47,10 @@ body {
   top: 100vh;
 
   width: 100%;
-  height: 800px;
+  height: 1000px;
 
   background-color: white;
+  box-shadow: 10px 0px 10px;
 }
 
 #arrow-indicator {
@@ -69,3 +79,214 @@ body {
 }
 
 /* Content */
+/* Bio */
+
+#bio {
+  width: 100%;
+  height: 400px;
+
+  overflow: hidden;
+}
+
+#headshot {
+  float: right;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 80px;
+
+  width: 200px;
+  height: auto;
+
+  box-shadow: 0px 0px 15px;
+}
+
+#bio header {
+  padding-top: 80px;
+  padding-left: 100px;
+
+  height: 300px;
+  overflow-y: scroll;
+}
+
+#bio header h1 {
+  margin: 0;
+}
+
+#bio a {
+  color: black;
+  text-decoration: none;
+
+  border: 1px solid black;
+  border-radius: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#bio a:hover {
+  background-image: url('../images/background.png');
+  color: white;
+  border: 1px solid white;
+}
+
+/* Projects */
+/* Header */
+
+#projects {
+  width: 100%;
+  height: 500px;
+
+  position: relative;
+}
+
+#projects header {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  width: 100%;
+  height: 100px;
+
+  text-align: center;
+}
+
+/* Buttons */
+
+#left, #right {
+  position: absolute;
+  top: 100px;
+
+  z-index: 2;
+
+  width: 5vw;
+  height: 400px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: none;
+  border: none;
+
+  transition: width 1s linear;
+}
+
+#left:hover, #right:hover {
+  cursor: pointer;
+}
+
+#left img:hover, #right img:hover {
+  filter: brightness(65%);
+  width: 100%;
+}
+
+#left:focus, #right:focus {
+  outline: none;
+}
+
+#left img, #right img {
+  width: 80%;
+  height: auto
+}
+
+#left {
+  left: 0;
+}
+
+#right {
+  right: 0;
+}
+
+/* Project Slideshow */
+
+#project-slideshow {
+  position: absolute;
+  top: 100px;
+  left: 0px;
+
+  width: 100%;
+  height: 400px;
+
+  display: flex;
+  flex-direction: row;
+}
+
+#project-slideshow > div {
+  height: 100%;
+  width: 30%;
+
+  transition: left 1s ease;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#project-slideshow > div p {
+  width: 80%;
+}
+
+/* Live Link/ Project Images */
+
+.live-link {
+  width: 75%;
+  height: auto;
+  max-height: 50%;
+
+  border: 1px solid black;
+  overflow: hidden;
+}
+
+.live-link img {
+  width: 120%
+}
+
+.live-link:hover img{
+  filter: brightness(30%);
+}
+
+/* Project Slides */
+
+.zeroth {
+  position: absolute;
+  top: 0;
+  left: -30vw;
+}
+
+.first {
+  position: absolute;
+  top: 0;
+  left: 5vw;
+}
+
+.second {
+  position: absolute;
+  top: 0;
+  left: 35vw;
+}
+
+.third {
+  position: absolute;
+  top: 0;
+  left: 65vw;
+}
+
+.fourth {
+  position: absolute;
+  top: 0;
+  left: 100vw;
+}
+
+.fifth {
+  position: absolute;
+  top: 0;
+  left: 100vw;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+/* Skills */

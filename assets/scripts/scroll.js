@@ -3,7 +3,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   arrowIndicator.addEventListener('click', () => {
     window.scrollTo({
-      top: window.screen.height,
+      top: window.innerHeight,
       left: 0,
       behavior: 'smooth'
     });

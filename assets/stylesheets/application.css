@@ -226,13 +226,14 @@ body {
   align-items: center;
 }
 
-#project-slideshow > div p {
+#project-slideshow > div > p {
   width: 80%;
 }
 
 /* Live Link/ Project Images */
 
 .live-link {
+  position: relative;
   width: 75%;
   height: auto;
   max-height: 50%;
@@ -247,6 +248,33 @@ body {
 
 .live-link:hover img{
   filter: brightness(30%);
+}
+
+.live-link p {
+  position: absolute;
+  top: calc(50% - 10px);
+  left: calc(50% - 35px);
+
+  width: 70px;
+  margin: 0;
+
+  color: white;
+  font-size: 0px;
+  text-align: center;
+
+  transition: font-size 0.1s linear;
+}
+
+.live-link:hover p {
+  font-size: 14px;
+
+  transition: font-size 0.2s linear;
+}
+
+.live-link p:hover {
+  color: #ff33ff;
+
+  transition: color 0.2s linear;
 }
 
 /* Project Slides */
@@ -359,6 +387,14 @@ body {
   height: 100px;
 
   text-align: center;
+}
+
+#contact header h1 {
+  margin-bottom: 0;
+}
+
+#contact header h4 {
+  margin: 0;
 }
 
 #logos {

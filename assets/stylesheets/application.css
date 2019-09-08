@@ -315,6 +315,12 @@ body {
   left: 100vw;
 }
 
+.sixth {
+  position: absolute;
+  top: 0;
+  left: 100vw;
+}
+
 .hidden {
   visibility: hidden;
 }

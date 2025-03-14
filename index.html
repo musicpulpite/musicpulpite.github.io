@@ -1,204 +1,49 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131202078-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-131202078-1');
-    </script>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="assets/stylesheets/application.css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro" rel="stylesheet">
-    <script type="text/javascript" src="assets/scripts/slideshow.js"></script>
-    <script type="text/javascript" src="assets/scripts/scroll.js"></script>
-    <script type="text/javascript" src="assets/scripts/blur_intro.js"></script>
-    <title>William McAdams Portfolio Website</title>
-  </head>
-  <body>
-    <div id="intro">
-      <header>
-        <h2>William McAdams</h2>
-        <h4>Software Engineer</h4>
-      </header>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>William McAdams - Portfolio Website</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+    <canvas id="background-canvas"></canvas>
+    <div class="content">
+        <div class="left-panel">
+            <div class="header">
+                <h1>Your Name</h1>
+                <div class="bio">
+                    <p>Web Developer & Designer based in [Your Location]. I specialize in creating responsive, interactive web experiences with a focus on clean design and performance.</p>
+                    <p>With over [X] years of experience, I've worked on projects ranging from small business websites to complex web applications.</p>
+                </div>
+            </div>
+            
+            <nav class="links">
+                <h2>Find Me</h2>
+                <ul>
+                    <li><a href="https://github.com/yourusername" target="_blank">GitHub</a></li>
+                    <li><a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://twitter.com/yourusername" target="_blank">Twitter</a></li>
+                    <li><a href="https://yourwebsite.com" target="_blank">Personal Blog</a></li>
+                    <li><a href="mailto:your.email@example.com">Email Me</a></li>
+                </ul>
+                
+                <h2>Projects</h2>
+                <ul>
+                    <li><a href="#project1">Project One</a></li>
+                    <li><a href="#project2">Project Two</a></li>
+                    <li><a href="#project3">Project Three</a></li>
+                </ul>
+                
+                <h2>Resume</h2>
+                <ul>
+                    <li><a href="resume.pdf" target="_blank">Download PDF</a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
-    <div id="content">
-      <a id="arrow-indicator">
-        <img src="./assets/images/up_arrow.png" alt="Arrow Indcator">
-      </a>
-      <div id="bio">
-        <img id="headshot" src="./assets/images/headshot.jpg" alt="Headshot">
-        <header>
-          <h1>William McAdams</h1>
-          <h3>Software Engineer</h3>
-          <p>I am a software engineer based out of New York City with
-            experience in React/Redux, GraphQL, Meteor, Node.js, Ruby on Rails and Python.
-            Currently I work at Hive - a startup building workplace productivity apps - where I focus on 
-            software architecture and high-level design patterns for our GraphQL server and React/Redux client.
-            Outside of coding I enjoy mountain biking, rock climbing and science fiction.
-          </p>
-          <p>
-            Internet Technology has already proven its potential for making the world
-            a more transparent and equitable place (with caveats) and I am passionate
-            about furthering that trajectory through clever design and a socially conscious
-            business philosophy.
-          </p>
-          <p>
-            <a href="https://docs.google.com/document/d/e/2PACX-1vTzTwykD2jLD4BVar4gbyoaAnfA3Zvn5_D61YUAzSljzqBFRWir0oHZNYsZW4CeYQux-_M9_5dqBlAQ/pub">
-              View my resume
-            </a>
-          </p>
-        </header>
-      </div>
-
-      <div id="projects">
-        <header>
-          <h1>Projects</h1>
-        </header>
-        <button type="button" id="left">
-          <img src="./assets/images/left_arrow.png" alt="Left">
-        </button>
-        <button type="button" id="right">
-          <img src="./assets/images/right_arrow.png" alt="Right">
-        </button>
-        <div id="project-slideshow">
-          <div id="blkchain" class="zeroth hidden">
-            <a class="live-link" href="https://github.com/musicpulpite/blkChain">
-              <img src="./assets/images/blockchain_diagram.png" alt="blockchain">
-              <p>Live Link</p>
-            </a>
-            <p>
-              <strong>BlockChain API</strong> <a href="https://github.com/musicpulpite/blkChain">Github</a>
-            </br>
-              A simple blockchain API built with Node.js and WebSockets (still a work in progress).
-            </p>
-          </div>
-          <div id="feedlet" class="first">
-            <a class="live-link" href="https://feedlet.herokuapp.com/#/welcome">
-              <img src="./assets/images/screenshot_real.png" alt="FeedletScreen">
-              <p>Live Link</p>
-            </a>
-            <p>
-              <strong>Feedlet</strong> <a href="https://github.com/musicpulpite/Feedlet">Github</a>
-            </br>
-              A news aggregator website powered by NewsAPI.
-            </p>
-          </div>
-          <div id="tron-light-cycles" class="second">
-            <a class="live-link" href="https://musicpulpite.github.io/TronLightCycles/">
-              <img src="./assets/images/tron_game_screenshot.png" alt="TronScreen">
-              <p>Live Link</p>
-            </a>
-            <p>
-              <strong>Tron Light Cycles</strong> <a href="https://github.com/musicpulpite/TronLightCycles">Github</a>
-            </br>
-              A browser game recreating the classic arena battle from the movie Tron.
-            </p>
-          </div>
-          <div id="virtual-dom" class="third">
-            <a class="live-link" href="https://musicpulpite.github.io/VirtualDOM-Project/">
-              <img src="./assets/images/vdom_screenshot.png" alt="VirtualDOM">
-              <p>Live Link</p>
-            </a>
-            <p>
-              <strong>VirtualDOM Diffing</strong> <a href="https://github.com/musicpulpite/VirtualDOM-Project">Github</a>
-            </br>
-              A lightweight recreation of ReactJS' core innovation - the VirtualDOM
-              and VirtualDOM diffing algorithm.
-            </p>
-          </div>
-          <div id="kaggle" class="fourth hidden">
-            <a class="live-link" href="https://www.kaggle.com/musicpulpite/an-introductory-attempt-at-nnets-on-march-madness">
-              <img src="./assets/images/kaggle_screenshot.png" alt="Kaggle">
-              <p>Live Link</p>
-            </a>
-            <p>
-              <strong>Google Cloud & NCAA® ML Competition 2018-Men's</strong> (Image is the link)
-            </br>
-              An introductory atttempt at neural network predictions on the NCAA
-              Men's Basketball Tournament.
-            </p>
-          </div>
-          <div id="go" class="fifth hidden">
-            <a class="live-link" href="https://musicpulpite.github.io/GoGame/">
-              <img src="./assets/images/go_game.png" alt="GoGame">
-              <p>Live Link</p>
-            </a>
-            <p>
-              <strong>Go Browser Game</strong> <a href="https://github.com/musicpulpite/GoGame">Github</a>
-            </br>
-              An 9X9 Go browser game written in React/Redux with game logic utilizing the Union-Find algorithm.
-            </p>
-          </div>
-          <div id="go" class="sixth hidden">
-            <a class="live-link" href="https://github.com/musicpulpite/Compound-Async-Iterator">
-              <img src="https://i.ytimg.com/vi/I5oDbp_U-fQ/maxresdefault.jpg" alt="AsyncIterators">
-              <p>Repo Link (image courtesy of "Fun Fun Function" youtube channel)</p>
-            </a>
-            <p>
-              <strong>Compound Async Iterators</strong> <a href="https://github.com/musicpulpite/Compound-Async-Iterator">Github</a>
-            </br>
-              A small demo for building an async generator function that works over multiple async resources simultaneously.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div id="skills">
-        <header>
-          <h1>Skills</h1>
-        </header>
-        <div id="skills-list">
-          <object type="image/svg+xml" data="./assets/tech_logos/react.svg">
-            Your browser does not support SVG
-          </object>
-          <object type="image/svg+xml" data="./assets/tech_logos/javascript.svg">
-            Your browser does not support SVG
-          </object>
-          <object type="image/svg+xml" data="./assets/tech_logos/nodejs.svg">
-            Your browser does not support SVG
-          </object>
-          <object type="image/svg+xml" data="./assets/tech_logos/graphql.svg">
-            Your browser does not support SVG
-          </object>
-          <object type="image/svg+xml" data="./assets/tech_logos/ruby.svg">
-            Your browser does not support SVG
-          </object>
-          <object type="image/svg+xml" data="./assets/tech_logos/python.svg">
-            Your browser does not support SVG
-          </object>
-          <object type="image/svg+xml" data="./assets/tech_logos/meteor-icon.svg">
-            Your browser does not support SVG
-          </object>
-          <object type="image/svg+xml" data="./assets/tech_logos/html-5.svg">
-            Your browser does not support SVG
-          </object>
-          <object type="image/svg+xml" data="./assets/tech_logos/css-3.svg">
-            Your browser does not support SVG
-          </object>
-        </div>
-      </div>
-
-      <div id="contact">
-        <header>
-          <h1>Contact Me</h1>
-        </header>
-        <div id="logos">
-          <a href="https://github.com/musicpulpite">
-            <img src="./assets/images/github_logo.png" alt="github">
-          </a>
-          <a href="https://www.linkedin.com/in/musicpulpite/">
-            <img src="./assets/images/linkedin_logo.png" alt="linkedin">
-          </a>
-          <a href="https://angel.co/william-mcadams">
-            <img src="./assets/images/angellist_logo.png" alt="angellist">
-          </a>
-        </div>
-      </div>
-
-    </div>
-  </body>
+    <script src="scripts/graph.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
 </html>

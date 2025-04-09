@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-  // Create a container for the GitHub preview iframe
+  // Create a container for the website  preview iframe
   const previewContainer = document.createElement('div');
   previewContainer.className = 'github-preview-container';
   document.body.appendChild(previewContainer);
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
         hideTimeout = null;
       }
       
-      // Get the GitHub repo URL from the data attribute
+      // Get the website URL from the data attribute
       const repoUrl = this.getAttribute('data-href');
       if (!repoUrl) return;
       
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
       // Show the preview container
       previewContainer.innerHTML = `
         <div class="preview-header">
-          <span>${this.textContent} on GitHub</span>
+          <span>${this.textContent}</span>
           <small>Click to visit</small>
         </div>
         <iframe src="${repoUrl}" frameborder="0" style="width:100%; height:calc(100% - 36px);"></iframe>
